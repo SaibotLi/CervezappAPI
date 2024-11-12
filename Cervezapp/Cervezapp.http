@@ -1,0 +1,6 @@
+@Cervezapp_HostAddress = http://localhost:5161
+
+GET {{Cervezapp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
