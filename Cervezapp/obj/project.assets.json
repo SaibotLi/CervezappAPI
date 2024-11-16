@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tobil\\.nuget\\packages\\": {}
+    "C:\\Users\\ElTobiLele\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobil\\OneDrive\\Escritorio\\tb\\c# api tutorial\\Cervezapp\\Cervezapp.csproj",
+      "projectUniqueName": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
       "projectName": "Cervezapp",
-      "projectPath": "C:\\Users\\tobil\\OneDrive\\Escritorio\\tb\\c# api tutorial\\Cervezapp\\Cervezapp.csproj",
-      "packagesPath": "C:\\Users\\tobil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobil\\OneDrive\\Escritorio\\tb\\c# api tutorial\\Cervezapp\\obj\\",
+      "projectPath": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
+      "packagesPath": "C:\\Users\\ElTobiLele\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tobil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ElTobiLele\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

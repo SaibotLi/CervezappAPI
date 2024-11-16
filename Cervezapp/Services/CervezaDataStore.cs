@@ -1,11 +1,14 @@
 using Cervezapp.Models;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.AspNetCore.SignalR;
 
 namespace Cervezapp.Services;
 
 public class CervezaDataStore 
 {
 public List<Cerveza> Cervezas {get; set; }
+
+public static CervezaDataStore Current { get; } = new CervezaDataStore(); 
 
 public CervezaDataStore()
 {
@@ -52,6 +55,6 @@ new Cerveza() {
         }
     }
 }
- }    
+ };
 }
 }
