@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Cervezapp.Models;
 public class DescriptionPart {
     public string? Text { get; set; } // Texto opcional que puede ser null
@@ -8,9 +11,11 @@ public class DescriptionPart {
 }
 public class Step
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
     public string Title { get; set; } = string.Empty;
         public string SubTitle { get; set; } = string.Empty;
     public DescriptionPart? DescriptionPart { get; set; }
-    public int Time { get; set; } // Time in seconds
+    public int Time { get; set; }
 }
