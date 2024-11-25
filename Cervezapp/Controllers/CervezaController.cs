@@ -43,8 +43,7 @@ public ActionResult<Cerveza> PostCerveza(CervezaInsert cervezaInsert) // Paráme
     );
 }
 
-[HttpPut("{cervezaId}")] // Actualizar cerveza
-
+[HttpPut("{cervezaId}")] // Lógica para actualizar cerveza
 public ActionResult<Cerveza> PutCerveza([FromRoute] int cervezaId, [FromBody] CervezaInsert cervezaInsert) // "FromRoute": El parametro viene de la URL. "FromBody": El parametro viene del body.
 {
     var cerveza = CervezaDataStore.Current.Cervezas.FirstOrDefault(x => x.Id == cervezaId);
@@ -55,4 +54,7 @@ public ActionResult<Cerveza> PutCerveza([FromRoute] int cervezaId, [FromBody] Ce
     cerveza.Description = cervezaInsert.Description;
     return NoContent();
 }
+
+[HttpDelete("{mandrilId}")]
+
 }
