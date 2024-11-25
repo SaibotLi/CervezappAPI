@@ -1,36 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj": {}
+    "C:\\Users\\tobia\\Desktop\\tobias\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj": {
+    "C:\\Users\\tobia\\Desktop\\tobias\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\Desktop\\tobias\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
         "projectName": "Cervezapp",
-        "projectPath": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
-        "packagesPath": "C:\\Users\\ElTobiLele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ElTobiLele\\Desktop\\Personal\\Programación\\CervezappAPI\\Cervezapp\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\Desktop\\tobias\\Programación\\CervezappAPI\\Cervezapp\\Cervezapp.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\Desktop\\tobias\\Programación\\CervezappAPI\\Cervezapp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ElTobiLele\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -47,12 +41,12 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
