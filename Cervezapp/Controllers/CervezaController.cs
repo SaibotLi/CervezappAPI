@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Cervezapp.Controllers;
 
 [ApiController] // Valida datos y controla las respuestas.
-[Route("api/[controller]")] //En que URL va a correr el controller
+[Route("api/[controller]")] // En que URL va a correr el controller
 public class CervezaController : ControllerBase
 {
 [HttpGet] // Obtener todas las cervezas
@@ -23,7 +23,7 @@ public ActionResult<Cerveza> GetCerveza(int cervezaId)
     return Ok(cerveza);
 }
 
-[HttpPost] // El usuario podrá crear cervezas
+[HttpPost] // Crear cerveza
 public ActionResult<Cerveza> PostCerveza(CervezaInsert cervezaInsert) // Parámetro para a futuro insertar valores
 {
     var maxCervezaId = CervezaDataStore.Current.Cervezas.Max(x => x.Id); // Storeo la última ID 
@@ -41,5 +41,18 @@ public ActionResult<Cerveza> PostCerveza(CervezaInsert cervezaInsert) // Paráme
     new { cervezaId = cervezaNuevo.Id}, // Storea la nueva ID
     cervezaNuevo 
     );
+}
+
+[HttpPut("{cervezaId}")] // Actualizar cerveza
+
+public ActionResult<Cerveza> PutCerveza([FromRoute] int cervezaId, [FromBody] CervezaInsert cervezaInsert) // "FromRoute": El parametro viene de la URL. "FromBody": El parametro viene del body.
+{
+    var cerveza = CervezaDataStore.Current.Cervezas.FirstOrDefault(x => x.Id == cervezaId);
+    if (cerveza == null)
+    return NotFound("La cerveza solicitada no existe.");
+    
+    cerveza.Name = cervezaInsert.Name;
+    cerveza.Description = cervezaInsert.Description;
+    return NoContent();
 }
 }
