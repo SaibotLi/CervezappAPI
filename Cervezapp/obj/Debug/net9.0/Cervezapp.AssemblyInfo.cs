@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cervezapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a2ba21d83ca56ea60457fa502713ba936a869b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b2fb2aaa669bfb6854a82b7add08a700e03dd27")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cervezapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cervezapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
